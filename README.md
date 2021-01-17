@@ -2,7 +2,7 @@
 <html>
  
   <head>
-    <title> CH8 </title>
+   <title>網頁設計教學 HTML - 字型</title>
   </head>
    
   <body>
