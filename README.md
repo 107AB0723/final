@@ -1,20 +1,26 @@
 # 資財三乙 107AB0723 徐薇妮 期末
-<html>
- 
-  <head>
-   <title>網頁設計教學 HTML - 字型</title>
-  </head>
-   
-  <body>
-    字體 size 未指定時，預設為 3 的大小<br><br>
- 
-    <font size="1">字體 size 為 1 的大小</font><br>
-    <font size="2">字體 size 為 2 的大小</font><br>
-    <font size="3">字體 size 為 3 的大小</font><br>
-    <font size="4">字體 size 為 4 的大小</font><br>
-    <font size="5">字體 size 為 5 的大小</font><br>
-    <font size="6">字體 size 為 6 的大小</font><br>
-    <font size="7">字體 size 為 7 的大小</font>
-  </body>
-   
-</html>
+ case "title":
+?>
+<p class="cent">新增標題區圖片</p>
+<hr>
+<form action="api.php?do=addData" method="post" enctype="multipart/form-data">
+<table style="width:65%;margin:auto">
+  <tr>
+    <td>標題區圖片：</td>
+    <td><input type="file" name="file"></td>
+  </tr>
+  <tr>
+    <td>標題區替代文字：</td>
+    <td><input type="text" name="text" value=""></td>
+  </tr>
+  <tr>
+    <td class="cent" colspan="2">
+    <input type="hidden" name="table" value="title">
+      <input type="submit" value="新增">
+      <input type="reset" value="重置">
+    </td>
+  </tr>
+</table>
+</form>
+<?
+  break;
